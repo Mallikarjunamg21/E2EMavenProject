@@ -17,7 +17,7 @@ public class MongoDB {
 	}
 
 	public static String[] getCredentials() {
-		String uri = "mongodb+srv://SaaRthiConnecTor:PfLsjTcRnOYNZXvK@shabda.nlsde.mongodb.net/accounts";
+		String uri = "";
 		MongoClient mongoClient = MongoClients.create(uri);
 	{
 		MongoDatabase database = mongoClient.getDatabase("accounts");
