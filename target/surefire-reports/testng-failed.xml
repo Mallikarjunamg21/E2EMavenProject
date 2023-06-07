@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="none">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestComponents.BaseTest"/>
+      <class name="tests.AmazonTests"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="tests.AmazonTests">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="methodName"/>
+          <include name="tearDown"/>
+          <include name="validate_SelectitemfromDropdown"/>
+          <include name="validate_SearchDropdownOptions"/>
+          <include name="validate_pageTitle"/>
+        </methods>
+      </class> <!-- tests.AmazonTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
